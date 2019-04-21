@@ -2,6 +2,25 @@
 
 @section('content')
 
+<!-- Breadcrumbs & Page Title Start -->
+        <div class="breadcrumbs-title bg-img-4 parallax overlay dark-5 blank-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-menu ptb-150">
+                            <h1 class="l-height">Contact Us</h1>
+                            <ul class="clearfix">
+                                <li><a href="{{ asset('/') }}">Home</a> <i class="zmdi zmdi-chevron-right"></i></li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- Breadcrumbs & Page Title End -->
 <!-- Blog Section Start -->
         <section class="blog-area section-padding white-bg">
             <div class="container">
@@ -11,7 +30,7 @@
 							<div class="col-xs-12 col-sm-6 mb-30">
 								<div class="blog-post">
 									<div class="thumb text-center">
-										<a href="blog-details.html"><img src="assets/img/blog/1.jpg" alt="Thumbnail Image" /></a>
+										<a href="blog-details.html"><img src="{{ asset('img/blog/1.jpg') }}" alt="Thumbnail Image" /></a>
 									</div>
 									<div class="blog-content ptb-30 plr-35">
 										<div class="date-box clearfix mb-20">
@@ -32,7 +51,7 @@
 							<div class="col-xs-12 col-sm-6 mb-30">
 								<div class="blog-post">
 									<div class="thumb text-center">
-										<a href="blog-details.html"><img src="assets/img/blog/2.jpg" alt="Thumbnail Image" /></a>
+										<a href="blog-details.html"><img src="{{ asset('img/blog/2.jpg') }}" alt="Thumbnail Image" /></a>
 									</div>
 									<div class="blog-content ptb-30 plr-35">
 										<div class="date-box clearfix mb-20">
@@ -53,7 +72,7 @@
 							<div class="col-xs-12 col-sm-6 mb-30">
 								<div class="blog-post">
 									<div class="thumb text-center">
-										<a href="blog-details.html"><img src="assets/img/blog/6.jpg" alt="Thumbnail Image" /></a>
+										<a href="blog-details.html"><img src="{{ asset('img/blog/6.jpg') }}" alt="Thumbnail Image" /></a>
 									</div>
 									<div class="blog-content ptb-30 plr-35">
 										<div class="date-box clearfix mb-20">
@@ -74,7 +93,7 @@
 							<div class="col-xs-12 col-sm-6 mb-30">
 								<div class="blog-post">
 									<div class="thumb text-center">
-										<a href="blog-details.html"><img src="assets/img/blog/7.jpg" alt="Thumbnail Image" /></a>
+										<a href="blog-details.html"><img src="{{ asset('img/blog/7.jpg') }}" alt="Thumbnail Image" /></a>
 									</div>
 									<div class="blog-content ptb-30 plr-35">
 										<div class="date-box clearfix mb-20">
@@ -95,7 +114,7 @@
 							<div class="col-xs-12 col-sm-6 mobi-mb-30">
 								<div class="blog-post">
 									<div class="thumb text-center">
-										<a href="blog-details.html"><img src="assets/img/blog/8.jpg" alt="Thumbnail Image" /></a>
+										<a href="blog-details.html"><img src="{{ asset('img/blog/8.jpg') }}" alt="Thumbnail Image" /></a>
 									</div>
 									<div class="blog-content ptb-30 plr-35">
 										<div class="date-box clearfix mb-20">
@@ -116,7 +135,7 @@
 							<div class="col-xs-12 col-sm-6">
 								<div class="blog-post">
 									<div class="thumb text-center">
-										<a href="blog-details.html"><img src="assets/img/blog/9.jpg" alt="Thumbnail Image" /></a>
+										<a href="blog-details.html"><img src="{{ asset('img/blog/9.jpg') }}" alt="Thumbnail Image" /></a>
 									</div>
 									<div class="blog-content ptb-30 plr-35">
 										<div class="date-box clearfix mb-20">
@@ -202,7 +221,7 @@
 										<li>
 											<div class="thumb pull-left mr-20">
 												<a href="blog-details.html">
-													<img src="assets/img/blog/sidebar/1.jpg" alt="Post Thumb" />
+													<img src="{{ asset('img/blog/sidebar/1.jpg') }}" alt="Post Thumb" />
 												</a>
 											</div>
 											<div class="text">
@@ -214,7 +233,7 @@
 										<li>
 											<div class="thumb pull-left mr-20">
 												<a href="blog-details.html">
-													<img src="assets/img/blog/sidebar/2.jpg" alt="Post Thumb" />
+													<img src="{{ asset('img/blog/sidebar/2.jpg') }}" alt="Post Thumb" />
 												</a>
 											</div>
 											<div class="text">
@@ -226,7 +245,7 @@
 										<li>
 											<div class="thumb pull-left mr-20">
 												<a href="blog-details.html">
-													<img src="assets/img/blog/sidebar/3.jpg" alt="Post Thumb" />
+													<img src="{{ asset('img/blog/sidebar/3.jpg') }}" alt="Post Thumb" />
 												</a>
 											</div>
 											<div class="text">

@@ -2,7 +2,27 @@
 
 @section('content')
 
-<div class="contact-area section-padding">
+<!-- Breadcrumbs & Page Title Start -->
+        <div class="breadcrumbs-title bg-img-4 parallax overlay dark-5 blank-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-menu ptb-150">
+                            <h1 class="l-height">Contact Us</h1>
+                            <ul class="clearfix">
+                                <li><a href="{{ asset('/') }}">Home</a> <i class="zmdi zmdi-chevron-right"></i></li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- Breadcrumbs & Page Title End -->
+        <!-- Contact Info Section Start -->
+		<div class="contact-area section-padding">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-7 mobi-mb-50">
@@ -54,5 +74,8 @@
 				</div>
 			</div>
 		</div>
+        <!-- Contact Info Section End -->
+		
+        
 
 @endsection

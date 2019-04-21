@@ -2,6 +2,26 @@
 
 @section('content')
 
+<!-- Breadcrumbs & Page Title Start -->
+        <div class="breadcrumbs-title bg-img-4 parallax overlay dark-5 blank-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-menu ptb-150">
+                            <h1 class="l-height">Contact Us</h1>
+                            <ul class="clearfix">
+                                <li><a href="{{ asset('/') }}">Home</a> <i class="zmdi zmdi-chevron-right"></i></li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- Breadcrumbs & Page Title End -->
+
         <!-- Features Section Start -->
         <section class="features-area section-padding white-bg">
             <div class="container">
@@ -20,10 +40,10 @@
                     <div class="col-xs-12 col-sm-4 mobi-mb-30">
                         <div class="rt-features style2">
 							<div class="rt-line-arrow">
-								<img src="assets/img/others/line-arrow.png" alt="Line Arrow" />
+								<img src="{{ asset('img/others/line-arrow.png') }}" alt="Line Arrow" />
 							</div>
 							<div class="icon">
-								<img src="assets/img/icons/8.png" alt="Icon" />
+								<img src="{{ asset('img/icons/8.png') }}" alt="Icon" />
 							</div>
                             <h4 class="text-capitalize">Learning Online 100%</h4>
                             <p>There are many variations of ages om Ipsum
@@ -34,10 +54,10 @@
                     <div class="col-xs-12 col-sm-4 mobi-mb-30">
                         <div class="rt-features style2">
 							<div class="rt-line-arrow rotatex">
-								<img src="assets/img/others/line-arrow.png" alt="Line Arrow" />
+								<img src="{{ asset('img/others/line-arrow.png') }}" alt="Line Arrow" />
 							</div>
 							<div class="icon">
-								<img src="assets/img/icons/9.png" alt="Icon" />
+								<img src="{{ asset('img/icons/9.png') }}" alt="Icon" />
 							</div>
                             <h4 class="text-capitalize">Top Expert Teacher</h4>
                             <p>There are many variations of ages om Ipsum
@@ -48,7 +68,7 @@
                     <div class="col-xs-12 col-sm-4">
                         <div class="rt-features style2">
 							<div class="icon">
-								<img src="assets/img/icons/10.png" alt="Icon" />
+								<img src="{{ asset('img/icons/10.png') }}" alt="Icon" />
 							</div>
                             <h4 class="text-capitalize">Training Internal</h4>
                             <p>There are many variations of ages om Ipsum
@@ -72,13 +92,13 @@
 								<div class="slick-boxed ml-minus-30 pr-37">
 									<div id="oneitem-dot">
 										<div class="item overlay dark-6">
-											<img src="assets/img/slider/box/1.jpg" alt="Image" />
+											<img src="{{ asset('img/slider/box/1.jpg') }}" alt="Image" />
 										</div>
 										<div class="item overlay dark-6">
-											<img src="assets/img/slider/box/2.jpg" alt="Image" />
+											<img src="{{ asset('img/slider/box/2.jpg') }}" alt="Image" />
 										</div>
 										<div class="item overlay dark-6">
-											<img src="assets/img/slider/box/3.jpg" alt="Image" />
+											<img src="{{ asset('img/slider/box/3.jpg') }}" alt="Image" />
 										</div>
 									</div>
 								</div>
@@ -159,7 +179,7 @@
                 <div class="row text-center">
                     <div class="col-xs-12 col-sm-6 col-md-3 mobi-mb-30 tab-mb-50">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/7.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/7.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">Gary Black</h4>
                             <h6 class="mb-15">UX Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -178,7 +198,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3 mobi-mb-30 tab-mb-50">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/6.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/6.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">Philip Waren</h4>
                             <h6 class="mb-15">Developer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -197,7 +217,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3 mobi-mb-30">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/5.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/5.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">Rubén Moya</h4>
                             <h6 class="mb-15">Manager</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -216,7 +236,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/7.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/7.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">David Bravo</h4>
                             <h6 class="mb-15">App Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -245,28 +265,28 @@
                 <div class="row text-center">
                     <div class="col-xs-12 col-sm-6 col-md-3 mobi-mb-50 tab-mb-50">
                         <div class="counter-func">
-                            <img class="mb-25" src="assets/img/icons/facts/1.png" alt="Icon" />
+                            <img class="mb-25" src="{{ asset('img/icons/facts/1.png') }}" alt="Icon" />
                             <h1><span class="counter theme-color">75</span></h1>
                             <h5 class="no-margin">Teachers</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 mobi-mb-50 tab-mb-50">
                         <div class="counter-func">
-                            <img class="mb-25" src="assets/img/icons/facts/2.png" alt="Icon" />
+                            <img class="mb-25" src="{{ asset('img/icons/facts/2.png') }}" alt="Icon" />
                             <h1><span class="counter theme-color">1200</span></h1>
                             <h5 class="no-margin">Classes complete</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 mobi-mb-50">
                         <div class="counter-func">
-                            <img class="mb-25" src="assets/img/icons/facts/3.png" alt="Icon" />
+                            <img class="mb-25" src="{{ asset('img/icons/facts/3.png') }}" alt="Icon" />
                             <h1><span class="counter theme-color">120</span></h1>
                             <h5 class="no-margin">all courses</h5>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="counter-func">
-                            <img class="mb-25" src="assets/img/icons/facts/4.png" alt="Icon" />
+                            <img class="mb-25" src="{{ asset('img/icons/facts/4.png') }}" alt="Icon" />
                             <h1><span class="counter theme-color">1200</span></h1>
                             <h5 class="no-margin">Students enrolled</h5>
                         </div>
@@ -296,7 +316,7 @@
             <div id="testimonial" class="text-center">
                 <div class="slide-item">
                     <div class="say-box ptb-30 white-bg">
-                        <img src="assets/img/icons/4.png" alt="Icon" />
+                        <img src="{{ asset('img/icons/4.png') }}" alt="Icon" />
                         <p class="mb-20">All the Lorem Ipsum generators on the Internet tend
                             <br /> repeat predefined chunks as necessary, making this the first true geerator on</p>
                         <h4 class="theme-color mb-5">Philip Waren</h4>
@@ -306,7 +326,7 @@
                 <!-- /.Item end -->
                 <div class="slide-item">
                     <div class="say-box ptb-30 white-bg">
-                        <img src="assets/img/icons/4.png" alt="Icon" />
+                        <img src="{{ asset('img/icons/4.png') }}" alt="Icon" />
                         <p class="mb-20">All the Lorem Ipsum generators on the Internet tend
                             <br /> repeat predefined chunks as necessary, making this the first true geerator on</p>
                         <h4 class="theme-color mb-5">Gary Black</h4>
@@ -316,7 +336,7 @@
                 <!-- /.Item end -->
                 <div class="slide-item">
                     <div class="say-box ptb-30 white-bg">
-                        <img src="assets/img/icons/4.png" alt="Icon" />
+                        <img src="{{ asset('img/icons/4.png') }}" alt="Icon" />
                         <p class="mb-20">All the Lorem Ipsum generators on the Internet tend
                             <br /> repeat predefined chunks as necessary, making this the first true geerator on</p>
                         <h4 class="theme-color mb-5">Gary Philip</h4>
@@ -335,19 +355,19 @@
 						<div class="clients-one">
 							<ul class="clearfix">
 								<li>
-									<a href="#"><img src="assets/img/client/1.png" alt="Clients Image" /></a>
+									<a href="#"><img src="{{ asset('img/client/1.png') }}" alt="Clients Image" /></a>
 								</li>
 								<li>
-									<a href="#"><img src="assets/img/client/2.png" alt="Clients Image" /></a>
+									<a href="#"><img src="{{ asset('img/client/2.png') }}" alt="Clients Image" /></a>
 								</li>
 								<li>
-									<a href="#"><img src="assets/img/client/3.png" alt="Clients Image" /></a>
+									<a href="#"><img src="{{ asset('img/client/3.png') }}" alt="Clients Image" /></a>
 								</li>
 								<li>
-									<a href="#"><img src="assets/img/client/4.png" alt="Clients Image" /></a>
+									<a href="#"><img src="{{ asset('img/client/4.png') }}" alt="Clients Image" /></a>
 								</li>
 								<li>
-									<a href="#"><img src="assets/img/client/5.png" alt="Clients Image" /></a>
+									<a href="#"><img src="{{ asset('img/client/5.png') }}" alt="Clients Image" /></a>
 								</li>
 							</ul>
 						</div>

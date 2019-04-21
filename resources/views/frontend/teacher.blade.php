@@ -2,13 +2,33 @@
 
 @section('content')
 
+<!-- Breadcrumbs & Page Title Start -->
+        <div class="breadcrumbs-title bg-img-4 parallax overlay dark-5 blank-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-menu ptb-150">
+                            <h1 class="l-height">Contact Us</h1>
+                            <ul class="clearfix">
+                                <li><a href="{{ asset('/') }}">Home</a> <i class="zmdi zmdi-chevron-right"></i></li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- Breadcrumbs & Page Title End -->
+
 <!-- Our Team Section Start -->
         <section class="team-area section-padding white-bg">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-xs-12 col-sm-6 col-md-3 mb-30 tab-mb-50">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/7.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/7.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">Gary Black</h4>
                             <h6 class="mb-15">UX Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -27,7 +47,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3 mb-30 tab-mb-50">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/6.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/6.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">Philip Waren</h4>
                             <h6 class="mb-15">UX Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -46,7 +66,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3 mb-30 tab-mb-50">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/5.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/5.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">Rubén Moya</h4>
                             <h6 class="mb-15">UX Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -65,7 +85,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3 mb-30 tab-mb-50">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/7.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/7.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">David Bravo</h4>
                             <h6 class="mb-15">UX Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -84,7 +104,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3 mobi-mb-30 tab-mb-50">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/7.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/7.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">Gary Black</h4>
                             <h6 class="mb-15">UX Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -103,7 +123,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3 mobi-mb-30 tab-mb-50">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/6.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/6.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">Philip Waren</h4>
                             <h6 class="mb-15">UX Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -122,7 +142,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3 mobi-mb-30">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/5.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/5.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">Rubén Moya</h4>
                             <h6 class="mb-15">UX Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>
@@ -141,7 +161,7 @@
                     <!-- /.rt-member Box End -->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="rt-member style2 white-bg">
-                            <img src="assets/img/people/7.png" alt="Gary Black" />
+                            <img src="{{ asset('img/people/7.png') }}" alt="Gary Black" />
                             <h4 class="theme-color mb-5">David Bravo</h4>
                             <h6 class="mb-15">UX Designer</h6>
                             <p class="mb-30">There are many varia passages of Lorem Ipsum available, majority have sualteration in some</p>

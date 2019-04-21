@@ -17,7 +17,7 @@
 
 # FrontEnd Routes
 
-Route('/',[
+Route::get('/',[
 	'as'	=>	'home',
 	'uses'	=>	'FrontEnd\FrontEndController@index'
 ]);
@@ -29,10 +29,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 // For Admin Panel
 Route::get('/admin','AdminController@index')->name('admin');
 // For teacher
-Route::get('/teacher', 'HomeController@teacher')->name('teacher');
+Route::get('/teacher', 'FrontEnd\FrontEndController@teacher')->name('teacher');
 // for about_us
-Route::get('/about', 'HomeController@about_us')->name('about');
+Route::get('/about', 'FrontEnd\FrontEndController@about_us')->name('about');
 // for blog
-Route::get('/blog', 'HomeController@blog')->name('blog');
+Route::get('/blog', 'FrontEnd\FrontEndController@blog')->name('blog');
 //for contact
-Route::get('/contact', 'HomeController@contact_us')->name('contact');
+Route::get('/contact', 'FrontEnd\FrontEndController@contact_us')->name('contact');

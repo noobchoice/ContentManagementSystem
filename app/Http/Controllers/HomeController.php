@@ -26,23 +26,5 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function teacher()
-    {
-        return view('frontend_blades.teacher');
-    }
-
-    public function about_us()
-    {
-        return view('frontend_blades.about');
-    }
-
-    public function blog()
-    {
-        return view('frontend_blades.blog');
-    }
-
-    public function contact_us()
-    {
-        return view('frontend_blades.contact');
-    }
+   
 }
