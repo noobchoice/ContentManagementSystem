@@ -261,7 +261,7 @@ SLICK CAROUSEL AS NAV
 /*
 	CONTACT FORM VALIDATIONS SETTINGS
 ========================================*/
-	var CTForm = $('#contact_form');
+	/*var CTForm = $('#contact_form');
     CTForm.validate({
         onfocusout: false,
         onkeyup: false,
@@ -292,12 +292,12 @@ SLICK CAROUSEL AS NAV
             element
             .text('').addClass('valid')
         }
-    });   
+    });   */
 
 /*
 	CONTACT FORM SCRIPT
 ========================================*/
- 	var CTSubmit = $('#contact_submit');
+ 	/*var CTSubmit = $('#contact_submit');
     CTForm.submit(function() {
         // submit the form
         if($(this).valid()){
@@ -326,7 +326,7 @@ SLICK CAROUSEL AS NAV
             CTSubmit.button('reset')
         }
         return false; 
-    });
+    });*/
 
 /*
 SCROLLUP

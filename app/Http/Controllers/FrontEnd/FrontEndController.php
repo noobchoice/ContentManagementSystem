@@ -31,5 +31,7 @@ class FrontEndController extends Controller{
         return view('frontend.contact');
     }
 
+    // Validation Rules For Contact Form...
+    
 }
 

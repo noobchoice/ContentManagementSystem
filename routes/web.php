@@ -36,3 +36,4 @@ Route::get('/about', 'FrontEnd\FrontEndController@about_us')->name('about');
 Route::get('/blog', 'FrontEnd\FrontEndController@blog')->name('blog');
 //for contact
 Route::get('/contact', 'FrontEnd\FrontEndController@contact_us')->name('contact');
+//Contact Send Data 

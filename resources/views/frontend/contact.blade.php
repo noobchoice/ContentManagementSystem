@@ -32,12 +32,12 @@
                              aleration in some orm altime to share.</p>
                             <hr class="line">
                         </div>
-						<form class="custom-input" id="contact_form" action="http://regaltheme.com/tf/multi/cultura/cultura/contact-form.php" method="post">
-							<input type="text" name="name" id="contact_name" placeholder="Name" required />
-							<input type="email" name="email" id="contact_email" placeholder="Email" required/>
-							<input type="text" name="phone" id="contact_number" placeholder="Phone Number" required/>
-							<textarea name="message" id="contact_message" rows="3" placeholder="Message"></textarea>
-							<button class="btn" type="submit" name="submit" id="contact_submit" data-complete-text="Well done!">Submit Now</button>
+						<form class="custom-input" id="contact_form" action="" method="post">
+							<input type="text" name="name"  placeholder="Name" >
+							<input type="email" name="email"  placeholder="Email" >
+							<input type="text" name="phone"  placeholder="Phone Number" >
+							<textarea name="msg"  rows="3" placeholder="Message"></textarea>
+							<button class="btn" type="submit" name="submit"  data-complete-text="Well done!">Submit Now</button>
 						</form>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-5">
@@ -75,7 +75,45 @@
 			</div>
 		</div>
         <!-- Contact Info Section End -->
-		
-        
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	  
+	<script>
+	   $(document).ready(function() {
+	      $("#contact_form").validate({
+		      rules: {
+						name: {
+						required: true,
+						minlength:3,
+						maxlength:20
+						},
+						
+						phone: {
+						required: true,
+						minlength:10,
+						maxlength:10
+						},
+						
+						msg: {
+						required: true,
+						minlength: 20,
+						maxlength: 255,
+						},
+						
+						email: {
+						required: true,
+						email: true,//add an email rule that will ensure the value entered is valid email id.
+						maxlength: 255,
+						},
+						
+						messages: {
+						name: "Please enter your Name",
+						phone: "Please enter your Phone Number",
+						email: "Please enter a valid email address"
+						},
+		      		}
+
+		   });
+	   });
+	</script>
 
 @endsection
