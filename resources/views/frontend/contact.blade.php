@@ -32,11 +32,21 @@
                              aleration in some orm altime to share.</p>
                             <hr class="line">
                         </div>
-						<form class="custom-input" id="contact_form" action="" method="post">
+						<form class="custom-input" id="contact_form" action="form-data" method="post">
+							    @csrf      <!--Token-->
+							    @if(session()->has('message'))
+								    <div class="alert alert-success">
+								        {{ session()->get('message') }}
+								    </div>
+								@endif
 							<input type="text" name="name"  placeholder="Name" >
+							<span style="color:red">{{ $errors->first('name') }}</span>
 							<input type="email" name="email"  placeholder="Email" >
+							<span style="color:red">{{ $errors->first('email') }}</span>
 							<input type="text" name="phone"  placeholder="Phone Number" >
+							<span style="color:red">{{ $errors->first('phone') }}</span>
 							<textarea name="msg"  rows="3" placeholder="Message"></textarea>
+							<span style="color:red">{{ $errors->first('msg') }}</span>
 							<button class="btn" type="submit" name="submit"  data-complete-text="Well done!">Submit Now</button>
 						</form>
 					</div>
@@ -77,7 +87,7 @@
         <!-- Contact Info Section End -->
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 	  
-	<script>
+	<!-- <script>
 	   $(document).ready(function() {
 	      $("#contact_form").validate({
 		      rules: {
@@ -111,9 +121,9 @@
 						email: "Please enter a valid email address"
 						},
 		      		}
-
+	
 		   });
 	   });
-	</script>
+	</script> -->
 
 @endsection
